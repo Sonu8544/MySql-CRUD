@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* Global cursor styles */
+button {
+  cursor: pointer !important;
+}
+
+button:disabled {
+  cursor: not-allowed !important;
+}
+
+/* Ensure all clickable elements have pointer cursor */
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+button:disabled,
+[role="button"]:disabled,
+input[type="button"]:disabled,
+input[type="submit"]:disabled,
+input[type="reset"]:disabled {
+  cursor: not-allowed !important;
+}
